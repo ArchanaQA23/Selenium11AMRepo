@@ -13,7 +13,7 @@ public class HomeTest extends BaseClass
     @Test(priority=1)
 	public void checkLogOut(String username, String pwd)
 	{
-		
+		System.out.println("Check logout");
 		test=extent.createTest("Logout Functionality check");
 		log.do_login(username,pwd);
 		test.pass(username + " is successfully landed on homepage");
