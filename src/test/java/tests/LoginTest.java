@@ -6,6 +6,7 @@ import excelReader.ExcelRead;
 import utilities.Screenshot;
 
 public class LoginTest extends BaseClass {
+	System.out.println("Check Out");
 
 	@Test(priority = 0, dataProviderClass = ExcelRead.class, dataProvider = "fetchData")
 	public void checkLogin(String username, String password) throws InterruptedException {
