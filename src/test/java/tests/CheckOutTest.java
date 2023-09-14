@@ -12,6 +12,8 @@ public class CheckOutTest extends BaseClass {
 
 	@Test( dataProviderClass = ExcelRead.class, dataProvider = "fetchData", priority = 7)
 	public void checkOut(String uname, String pwd) {
+		
+		System.out.println("Checkout changes done by murali");
 		log.do_login(uname, pwd);
 		test = extent.createTest("Validation for user checkout page");
 
