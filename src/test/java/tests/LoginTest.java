@@ -10,6 +10,7 @@ public class LoginTest extends BaseClass {
 	@Test(priority = 0, dataProviderClass = ExcelRead.class, dataProvider = "fetchData")
 	public void checkLogin(String username, String password) throws InterruptedException {
        
+		System.out.println("Login changes done by ram");
 		log.do_login(username, password);
 		
 		if (driver.getCurrentUrl().equals("https://www.saucedemo.com/inventory.html")) {

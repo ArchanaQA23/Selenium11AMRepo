@@ -14,6 +14,8 @@ public class HomeTest extends BaseClass
 	public void checkLogOut(String username, String pwd)
 	{
 		System.out.println("Check logout");
+		
+		System.out.println("Home page changes done by sundari");
 		test=extent.createTest("Logout Functionality check");
 		log.do_login(username,pwd);
 		test.pass(username + " is successfully landed on homepage");
